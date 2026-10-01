@@ -5,7 +5,7 @@ metadata:
   name: Python render shell
   version: 1.0.0
   description: Runs the rendering Python components (printing, EDI) in one process to save memory and CPU.
-  repository: https://github.com/brickKit/be-assembly-standard
+  repository: https://github.com/brickKit/be-py-render
   license: Apache-2.0
   vendor: brickKit
 shell:

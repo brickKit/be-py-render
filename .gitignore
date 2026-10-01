@@ -1,0 +1,4 @@
+# pip / uv pip install . 的构建产物
+__pycache__/
+*.egg-info/
+/build/

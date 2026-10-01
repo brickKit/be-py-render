@@ -6,7 +6,7 @@ Runs the rendering Python components in one process to save memory and CPU.
 
 ## Use it in a project
 
-This shell is code of the project that contains it. With at least one member in `shell.members`:
+This shell is its own repository; a project brings it in as an install source (be-assembly-standard checks it out as a Git submodule at `shell/be/py-render`). With at least one member in `shell.members`:
 
 ```bash
 brickkit add be/py-render --yes     # brings in the members it compiles in, nested under the shell
@@ -26,4 +26,4 @@ Prepare first: see "Before you deploy" in [BRICKKIT.md](BRICKKIT.md).
 
 ## Development
 
-Work on it from the project root, where `brickkit.yaml` is; read [AGENTS.md](AGENTS.md) first.
+Change it in this repository and release it from here; build and run it from the project root, where `brickkit.yaml` is. Read [AGENTS.md](AGENTS.md) first.
