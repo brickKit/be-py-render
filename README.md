@@ -1,29 +1,5 @@
-[English](README.md) · [中文](README.zh.md)
+# be-py-render
 
-# be/py-render
+Python 外壳 `be/py-render` 的仓库。旧版本（1.x）在分支 `legacy/v1`，标签保留；本主分支按终局设计从零开始（D59），版本从 `3.0.0` 起（A110）。
 
-Runs the rendering Python components in one process to save memory and CPU.
-
-## Use it in a project
-
-This shell is its own repository; a project brings it in as an install source (be-assembly-standard checks it out as a Git submodule at `shell/be/py-render`). With at least one member in `shell.members`:
-
-```bash
-brickkit add be/py-render --yes     # brings in the members it compiles in, nested under the shell
-brickkit build be/py-render
-brickkit up
-```
-
-Prepare first: see "Before you deploy" in [BRICKKIT.md](BRICKKIT.md).
-
-## Documentation
-
-| To find out | Read |
-|---|---|
-| What it hosts, what it does not do, how to configure and deploy it | [BRICKKIT.md](BRICKKIT.md) |
-| Its members, configuration keys and port | [component.yaml](component.yaml) |
-| How to change it | [AGENTS.md](AGENTS.md) |
-
-## Development
-
-Change it in this repository and release it from here; build and run it from the project root, where `brickkit.yaml` is. Read [AGENTS.md](AGENTS.md) first.
+设计依据：装配项目 [be-assembly-standard](https://github.com/brickKit/be-assembly-standard) 的协议 17 的外壳义务 `docs/zh/06-protocols/17-runtime-and-resources.md` 与代表部署实验的计划。代码随重建逐步加入。
