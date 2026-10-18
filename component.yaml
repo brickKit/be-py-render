@@ -4,14 +4,14 @@ kind: Component
 metadata:
   id: be/py-render
   name: Python render shell
-  version: 3.0.8
+  version: 3.0.9
   description: "The Python render shell: one Python process hosting the members installed (be-sdk-python's shell launcher)"
   repository: https://github.com/brickKit/be-py-render
 
 shell:
   members:
-    - test/probe-py@3.2.8
-    - test/probe-py2@3.2.8
+    - test/probe-py@3.2.9
+    - test/probe-py2@3.2.9
 
 deployment:
   type: container
