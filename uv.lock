@@ -204,7 +204,7 @@ wheels = [
 
 [[package]]
 name = "be-py-render"
-version = "3.0.1"
+version = "3.0.2"
 source = { editable = "." }
 dependencies = [
     { name = "be-sdk" },
@@ -219,8 +219,8 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "be-sdk", git = "https://github.com/brickKit/be-sdk-python?tag=v3.0.0a2" },
-    { name = "be-test-probe-py", git = "https://github.com/brickKit/be-acceptance?subdirectory=probes%2Fpy&tag=test-probe-py%2F3.2.0" },
+    { name = "be-sdk", git = "https://github.com/brickKit/be-sdk-python?tag=v3.0.0a3" },
+    { name = "be-test-probe-py", git = "https://github.com/brickKit/be-acceptance?subdirectory=probes%2Fpy&tag=test-probe-py%2F3.2.1" },
 ]
 
 [package.metadata.requires-dev]
@@ -231,8 +231,8 @@ dev = [
 
 [[package]]
 name = "be-sdk"
-version = "3.0.0a2"
-source = { git = "https://github.com/brickKit/be-sdk-python?tag=v3.0.0a2#6e605f58f222e25c6006b97b28b1dd0614a70254" }
+version = "3.0.0a3"
+source = { git = "https://github.com/brickKit/be-sdk-python?tag=v3.0.0a3#281093367bfdaa7cdfd91278fa3cdd6aa427c6a4" }
 dependencies = [
     { name = "aioboto3" },
     { name = "asyncpg" },
@@ -254,8 +254,8 @@ dependencies = [
 
 [[package]]
 name = "be-test-probe-py"
-version = "3.2.0"
-source = { git = "https://github.com/brickKit/be-acceptance?subdirectory=probes%2Fpy&tag=test-probe-py%2F3.2.0#157bcd56e03997c3e901a8b1cc08e9b8f9cc366e" }
+version = "3.2.1"
+source = { git = "https://github.com/brickKit/be-acceptance?subdirectory=probes%2Fpy&tag=test-probe-py%2F3.2.1#3d855231ea725644cf1ba092344b758679e2f24b" }
 dependencies = [
     { name = "be-sdk" },
 ]
