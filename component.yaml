@@ -1,0 +1,59 @@
+apiVersion: brickkit/v1
+kind: Component
+
+metadata:
+  id: be/py-render
+  name: Python render shell
+  version: 3.0.0
+  description: "The Python render shell: one Python process hosting the members installed (be-sdk-python's shell launcher)"
+  repository: https://github.com/brickKit/be-py-render
+
+shell:
+  members:
+    - test/probe-py@3.1.0
+    - test/probe-py2@3.1.0
+
+deployment:
+  type: container
+  build:
+    context: .
+    dockerfile: Dockerfile
+  port: 8402
+
+healthCheck:
+  type: http
+  path: /healthz
+
+readinessCheck:
+  type: http
+  path: /readyz
+
+local:
+  runCommand: [uv, run, python, -m, be_py_render]
+
+configSchema:
+  type: object
+  properties:
+    PG_SHELL_USER:
+      type: string
+      description: "the shell's login role (shell_py_render): it holds the members' runtime roles WITH INHERIT FALSE and switches per transaction; required when a member owns a database"
+    PG_SHELL_PASSWORD:
+      type: string
+      secret: true
+      description: "the password of PG_SHELL_USER"
+    SHELL_ALLOW_REPLACE:
+      type: boolean
+      description: "SDK default false; true lets a development environment with members installed from a local path start (with a warning), never in a release build"
+    LOG_LEVEL:
+      type: string
+      enum: [debug, info, warn, error]
+      description: "SDK default info: the shell's own lines; members have their own"
+    OTEL_URL:
+      type: string
+      description: "the shell's own tracing exporter; members have their own"
+    STOP_DRAIN_DELAY:
+      type: string
+      description: "a duration (e.g. 2s); SDK default 2s; never shorter than any member's"
+    STOP_TIMEOUT:
+      type: string
+      description: "a duration; SDK default 30s; never shorter than any member's"
