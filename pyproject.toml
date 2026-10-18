@@ -1,6 +1,6 @@
 [project]
 name = "be-py-render"
-version = "3.0.3"
+version = "3.0.4"
 description = "The Python render shell (be/py-render): one process hosting the Python members installed below"
 requires-python = ">=3.14,<3.15"
 dependencies = ["be-sdk", "be-test-probe-py"]
@@ -10,8 +10,8 @@ dev = ["pytest", "pyyaml"]
 
 [tool.uv.sources]
 # members by tag, never from a local path (the launcher refuses local installs in a release build)
-be-sdk = { git = "https://github.com/brickKit/be-sdk-python", tag = "v3.0.0a4" }
-be-test-probe-py = { git = "https://github.com/brickKit/be-acceptance", tag = "test-probe-py/3.2.2", subdirectory = "probes/py" }
+be-sdk = { git = "https://github.com/brickKit/be-sdk-python", tag = "v3.0.0a5" }
+be-test-probe-py = { git = "https://github.com/brickKit/be-acceptance", tag = "test-probe-py/3.2.3", subdirectory = "probes/py" }
 
 [build-system]
 requires = ["hatchling"]
