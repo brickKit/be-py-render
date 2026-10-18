@@ -149,7 +149,7 @@ wheels = [
 
 [[package]]
 name = "be-py-render"
-version = "3.0.7"
+version = "3.0.8"
 source = { editable = "." }
 dependencies = [
     { name = "be-sdk" },
@@ -165,7 +165,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "be-sdk", git = "https://github.com/brickKit/be-sdk-python?tag=v3.0.0a9" },
-    { name = "be-test-probe-py", git = "https://github.com/brickKit/be-acceptance?subdirectory=probes%2Fpy&tag=test-probe-py%2F3.2.6" },
+    { name = "be-test-probe-py", git = "https://github.com/brickKit/be-acceptance?subdirectory=probes%2Fpy&tag=test-probe-py%2F3.2.8" },
 ]
 
 [package.metadata.requires-dev]
@@ -199,8 +199,8 @@ dependencies = [
 
 [[package]]
 name = "be-test-probe-py"
-version = "3.2.6"
-source = { git = "https://github.com/brickKit/be-acceptance?subdirectory=probes%2Fpy&tag=test-probe-py%2F3.2.6#b746ec41f94105ab6b506aead6f6134bf599c6ab" }
+version = "3.2.8"
+source = { git = "https://github.com/brickKit/be-acceptance?subdirectory=probes%2Fpy&tag=test-probe-py%2F3.2.8#29af004cb8885bff2daee7fd9ba6702044e60c59" }
 dependencies = [
     { name = "be-sdk" },
 ]
