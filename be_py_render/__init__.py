@@ -5,7 +5,7 @@ version."""
 from besdk.component import Definition
 from besdk.shell import Identity
 
-ID, VERSION = "be/py-render", "3.0.4"
+ID, VERSION = "be/py-render", "3.0.5"
 
 
 def members() -> list[Definition]:
