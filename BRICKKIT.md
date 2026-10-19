@@ -24,4 +24,4 @@
 
 ## 外壳声明
 
-装进来的成员：`test/probe-py@3.2.9`、`test/probe-py2@3.2.9`。
+装进来的成员：`test/probe-py@3.2.10`、`test/probe-py2@3.2.10`。
