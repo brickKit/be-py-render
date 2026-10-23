@@ -3,7 +3,7 @@ revision = 5
 requires-python = "==3.15.*"
 
 [manifest]
-overrides = [{ name = "be-sdk", git = "https://github.com/brickKit/be-sdk-python?tag=v3.0.0a25" }]
+overrides = [{ name = "be-sdk", git = "https://github.com/brickKit/be-sdk-python?tag=v3.0.0a28" }]
 
 [[package]]
 name = "aiohappyeyeballs"
@@ -152,7 +152,7 @@ wheels = [
 
 [[package]]
 name = "be-py-render"
-version = "3.0.20"
+version = "3.0.21"
 source = { editable = "." }
 dependencies = [
     { name = "be-sdk" },
@@ -168,9 +168,9 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "be-sdk", git = "https://github.com/brickKit/be-sdk-python?tag=v3.0.0a25" },
+    { name = "be-sdk", git = "https://github.com/brickKit/be-sdk-python?tag=v3.0.0a28" },
     { name = "be-test-probe-py", git = "https://github.com/brickKit/be-acceptance?subdirectory=probes%2Fpy&tag=test-probe-py%2F3.2.19" },
-    { name = "infra-print", git = "https://github.com/brickKit/infra-print?tag=3.0.0" },
+    { name = "infra-print", git = "https://github.com/brickKit/infra-print?tag=3.0.2" },
 ]
 
 [package.metadata.requires-dev]
@@ -181,8 +181,8 @@ dev = [
 
 [[package]]
 name = "be-sdk"
-version = "3.0.0a25"
-source = { git = "https://github.com/brickKit/be-sdk-python?tag=v3.0.0a25#c16154c0a941e0c4dc73ff69c3ae4a3f3fe666e2" }
+version = "3.0.0a28"
+source = { git = "https://github.com/brickKit/be-sdk-python?tag=v3.0.0a28#dd6aab89b49446ca83a6cf8ac11fd684c96fd71f" }
 dependencies = [
     { name = "aiohttp" },
     { name = "asyncpg" },
@@ -537,8 +537,8 @@ wheels = [
 
 [[package]]
 name = "infra-print"
-version = "3.0.0"
-source = { git = "https://github.com/brickKit/infra-print?tag=3.0.0#cc82b736a2c689d14c99b429643cd702f78f002b" }
+version = "3.0.2"
+source = { git = "https://github.com/brickKit/infra-print?tag=3.0.2#fccd0d33e1c1731bce6a4e63583d57cdf45321b1" }
 dependencies = [
     { name = "be-sdk" },
     { name = "contract-infra-print" },

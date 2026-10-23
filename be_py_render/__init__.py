@@ -2,10 +2,13 @@
 its own runtime (be-sdk-python's shell launcher). Which members it hosts in a deployment is BrickKit's choice
 (BRICKKIT_SERVED_MEMBERS_CONFIG); the launcher refuses members that are not installed or not at the declared
 version."""
+from importlib import metadata
+
 from besdk.component import Definition
 from besdk.shell import Identity
 
-ID, VERSION = "be/py-render", "3.0.20"
+# VERSION is read from the installed package, so it cannot drift from pyproject.toml.
+ID, VERSION = "be/py-render", metadata.version("be-py-render")
 
 
 def members() -> list[Definition]:
