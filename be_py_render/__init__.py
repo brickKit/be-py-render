@@ -5,15 +5,16 @@ version."""
 from besdk.component import Definition
 from besdk.shell import Identity
 
-ID, VERSION = "be/py-render", "3.0.19"
+ID, VERSION = "be/py-render", "3.0.20"
 
 
 def members() -> list[Definition]:
     """The definitions installed in this shell, at the versions uv.lock pins (by tag); they must equal shell.members in
     component.yaml (tests/test_members.py)."""
+    import infra_print
     import probe_py
 
-    return probe_py.definitions()  # the experiment's probes; infra/print joins in step 7
+    return [*probe_py.definitions(), infra_print.definition()]  # the experiment's probes and infra/print
 
 
 def identity() -> Identity:
