@@ -152,7 +152,7 @@ wheels = [
 
 [[package]]
 name = "be-py-render"
-version = "3.0.21"
+version = "3.0.22"
 source = { editable = "." }
 dependencies = [
     { name = "be-sdk" },
@@ -170,7 +170,7 @@ dev = [
 requires-dist = [
     { name = "be-sdk", git = "https://github.com/brickKit/be-sdk-python?tag=v3.0.0a28" },
     { name = "be-test-probe-py", git = "https://github.com/brickKit/be-acceptance?subdirectory=probes%2Fpy&tag=test-probe-py%2F3.2.19" },
-    { name = "infra-print", git = "https://github.com/brickKit/infra-print?tag=3.0.2" },
+    { name = "infra-print", git = "https://github.com/brickKit/infra-print?tag=3.0.3" },
 ]
 
 [package.metadata.requires-dev]
@@ -537,8 +537,8 @@ wheels = [
 
 [[package]]
 name = "infra-print"
-version = "3.0.2"
-source = { git = "https://github.com/brickKit/infra-print?tag=3.0.2#fccd0d33e1c1731bce6a4e63583d57cdf45321b1" }
+version = "3.0.3"
+source = { git = "https://github.com/brickKit/infra-print?tag=3.0.3#f758d15fbe17ded9cbc23fca8e61c40c03ca1132" }
 dependencies = [
     { name = "be-sdk" },
     { name = "contract-infra-print" },
