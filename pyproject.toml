@@ -1,6 +1,6 @@
 [project]
 name = "be-py-render"
-version = "3.0.22"
+version = "3.0.23"
 description = "The Python render shell (be/py-render): one process hosting the Python members installed below"
 requires-python = ">=3.15,<3.16"
 dependencies = ["be-sdk", "be-test-probe-py", "infra-print"]
@@ -10,14 +10,14 @@ dev = ["pytest", "pyyaml"]
 
 [tool.uv]
 # one SDK in the process for every member, whatever tag a member pins for its own builds (the probes pin v3.0.0a20)
-override-dependencies = ["be-sdk @ git+https://github.com/brickKit/be-sdk-python@v3.0.0a28"]
+override-dependencies = ["be-sdk @ git+https://github.com/brickKit/be-sdk-python@v3.0.0a29"]
 
 [tool.uv.sources]
 # members by tag, never from a local path (the launcher refuses local installs in a release build)
-# one SDK in the process: the highest any member needs (infra/print 3.0.3 needs v3.0.0a28)
-be-sdk = { git = "https://github.com/brickKit/be-sdk-python", tag = "v3.0.0a28" }
+# one SDK in the process: the highest any member needs (infra/print 3.0.3 needs v3.0.0a29)
+be-sdk = { git = "https://github.com/brickKit/be-sdk-python", tag = "v3.0.0a29" }
 be-test-probe-py = { git = "https://github.com/brickKit/be-acceptance", tag = "test-probe-py/3.2.19", subdirectory = "probes/py" }
-infra-print = { git = "https://github.com/brickKit/infra-print", tag = "3.0.3" }
+infra-print = { git = "https://github.com/brickKit/infra-print", tag = "3.0.4" }
 contract-infra-print = { git = "https://github.com/brickKit/infra-print", tag = "contract/v3.0.0-alpha.1", subdirectory = "contract/python" }
 
 [build-system]
