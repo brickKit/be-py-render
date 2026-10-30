@@ -12,7 +12,8 @@ RUN uv sync --frozen --no-dev --no-editable
 FROM python:3.15.0-slim-trixie
 RUN apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*
 COPY --from=build /app/.venv /app/.venv
-# the shell's own port (health, readiness, description, every member's metrics); members listen on their own ports
-ENV PATH=/app/.venv/bin:$PATH PORT=8402
+# the shell's own port 8402 (health, readiness, description, every member's metrics; BrickKit injects PORT); members
+# listen on their own ports
+ENV PATH=/app/.venv/bin:$PATH
 EXPOSE 8402
 ENTRYPOINT ["python", "-m", "be_py_render"]
