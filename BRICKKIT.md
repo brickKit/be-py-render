@@ -24,4 +24,4 @@
 
 ## 外壳声明
 
-装进来的成员：`test/probe-py@3.2.27`、`test/probe-py2@3.2.27`、`infra/print@3.0.10`。进程里只有一个 SDK：`pyproject.toml` 的 `override-dependencies` 让每个成员都用 be-sdk-python 3.0.0a35（成员自己构建时钉的版本可以更早，但不能比成员在包元数据里声明的最低版本早：启动器核对，不满足的拒绝启动）。镜像基于 Debian slim（打印的渲染器 Typst 只有 glibc 的二进制包）。
+装进来的成员：`test/probe-py@3.2.28`、`test/probe-py2@3.2.28`、`infra/print@3.0.10`。进程里只有一个 SDK：`pyproject.toml` 的 `override-dependencies` 让每个成员都用 be-sdk-python 3.0.0a35（成员自己构建时钉的版本可以更早，但不能比成员在包元数据里声明的最低版本早：启动器核对，不满足的拒绝启动）。镜像基于 Debian slim（打印的渲染器 Typst 只有 glibc 的二进制包）。
