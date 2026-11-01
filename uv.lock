@@ -152,7 +152,7 @@ wheels = [
 
 [[package]]
 name = "be-py-render"
-version = "3.0.29"
+version = "3.0.30"
 source = { editable = "." }
 dependencies = [
     { name = "be-sdk" },
@@ -209,7 +209,7 @@ dependencies = [
 [[package]]
 name = "be-test-probe-py"
 version = "3.2.20"
-source = { git = "https://github.com/brickKit/be-acceptance?subdirectory=probes%2Fpy&tag=test-probe-py%2F3.2.25#5193c81c1bf23b0ea8d8b865f015ac6f16db6d5d" }
+source = { git = "https://github.com/brickKit/be-acceptance?subdirectory=probes%2Fpy&tag=test-probe-py%2F3.2.25#da544befaee828e92d7493fac49b506ef0047b5e" }
 dependencies = [
     { name = "be-sdk" },
 ]
